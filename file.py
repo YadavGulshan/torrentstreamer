@@ -5,6 +5,7 @@ import sys
 def main():
     movie_name = input("Enter the movie name which you want to stream \n")
     base_url = f"https://api.sumanjay.cf/torrent/?query={movie_name}"
+    ##thanks to sumanjay sir for creating this api.
     torrent_results = requests.get(base_url).json()
 
     ####
