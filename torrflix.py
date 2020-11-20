@@ -14,7 +14,7 @@ def main(movie_name):
     for result in torrent_result:
         if "movies" in result["type"].lower():
             print(index, ".", result["name"], result["size"], "\n",
-                  "\tseeders =", result["seeder"], "leachers =", result["leecher"], "\n")
+                  "\tseeders =", result["seeder"], "leachers =", result["leecher"], "\n\t", "site =", result["site"], "\n\t", "Trusted =", result["trusted"], "\n\t", "Type =", result["type"], "\n")
             index += 1
             magnet.append(result["magnet"])
     # print("\n\n")
